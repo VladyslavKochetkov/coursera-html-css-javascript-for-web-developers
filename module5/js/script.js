@@ -113,9 +113,9 @@ $(function () {
 
         var homeHtmlToInsertIntoMainPage = homeHtml.replaceAll(
           /{{randomCategoryShortName}}/g,
-          chosenCategoryShortName
+          "'" + chosenCategoryShortName + "'"
         );
-
+        console.log(homeHtmlToInsertIntoMainPage);
         insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
         //
         // var homeHtmlToInsertIntoMainPage = ....
